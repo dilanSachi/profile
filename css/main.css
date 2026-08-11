@@ -634,6 +634,14 @@ ul { list-style: none; }
   transition: transform .4s ease;
 }
 
+.gallery__item--contain {
+  background: var(--bg);
+}
+
+.gallery__item--contain img {
+  object-fit: contain;
+}
+
 .gallery__item:hover img { transform: scale(1.03); }
 
 .gallery__caption {
