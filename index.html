@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dilan Sachintha</title>
-  <meta name="description" content="Software Engineer with expertise in cloud-native systems, Kubernetes, and distributed software.">
+  <meta name="description"
+    content="Software Engineer with expertise in cloud-native systems, Kubernetes, and distributed software.">
   <meta name="author" content="Dilan Sachintha">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 
   <!-- Top navigation -->
@@ -31,7 +34,7 @@
         <a href="#about" class="nav__link">About</a>
         <a href="#skills" class="nav__link">Skills</a>
         <a href="#experience" class="nav__link">Experience</a>
-        <a href="#thesis" class="nav__link">Thesis</a>
+        <a href="#projects" class="nav__link">Projects</a>
         <a href="#education" class="nav__link">Education</a>
         <a href="#research" class="nav__link">Research</a>
         <a href="#certificates" class="nav__link">Certificates</a>
@@ -41,9 +44,12 @@
       </nav>
 
       <div class="topbar__social">
-        <a href="https://www.linkedin.com/in/dilansachintha/" class="social__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/dilanSachi" class="social__link" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://stackoverflow.com/users/6765336/dilan-sachintha-nayanajith" class="social__link" target="_blank" rel="noopener noreferrer">StackOverflow</a>
+        <a href="https://www.linkedin.com/in/dilansachintha/" class="social__link" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/dilanSachi" class="social__link" target="_blank"
+          rel="noopener noreferrer">GitHub</a>
+        <a href="https://stackoverflow.com/users/6765336/dilan-sachintha-nayanajith" class="social__link"
+          target="_blank" rel="noopener noreferrer">StackOverflow</a>
         <a href="mailto:dilansachinthanos@gmail.com" class="social__link">Email</a>
       </div>
     </div>
@@ -51,378 +57,547 @@
 
   <main class="main">
 
-      <!-- Hero -->
-      <section id="home" class="hero fade-in">
-        <div class="hero__text">
-          <p class="hero__greeting">Hello, I'm</p>
-          <h1 class="hero__title">Dilan Sachintha</h1>
-          <p class="hero__subtitle">Software Engineer with around five years of experience building reliable, cloud-native systems. Currently working at Nokia on business-critical mediation platforms.</p>
+    <!-- Hero -->
+    <section id="home" class="hero fade-in">
+      <div class="hero__text">
+        <p class="hero__greeting">Hello, I'm</p>
+        <h1 class="hero__title">Dilan Sachintha</h1>
+        <p class="hero__subtitle">Software Engineer with around five years of experience building reliable, cloud-native
+          systems. Currently working at Nokia on business-critical mediation telecommunications platform.</p>
+      </div>
+      <div class="hero__gallery" id="heroGallery">
+        <img src="images/alpe_di_siusi.jpg" alt="" class="hero__image active">
+        <img src="images/infinity_pool_self.jpg" alt="" class="hero__image">
+        <div class="hero__dots">
+          <button class="hero__dot active" aria-label="Photo 1" data-index="0"></button>
+          <button class="hero__dot" aria-label="Photo 2" data-index="1"></button>
         </div>
-        <div class="hero__gallery" id="heroGallery">
-          <img src="images/3O3A4674_copy.jpg" alt="" class="hero__image active">
-          <img src="images/infinity_pool_self.jpg" alt="" class="hero__image">
-          <div class="hero__dots">
-            <button class="hero__dot active" aria-label="Photo 1" data-index="0"></button>
-            <button class="hero__dot" aria-label="Photo 2" data-index="1"></button>
-          </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section fade-in">
+      <p class="section__label">About</p>
+      <h2 class="section__title">Who I am</h2>
+      <div class="prose">
+        <p><strong>Hi! I'm Dilan Sachintha.</strong> I'm a software engineer with around five years of software
+          development experience and a strong foundation in cloud-native and distributed systems. I have worked
+          extensively with Kubernetes, Docker, Python, Java, CI/CD automation, and software lifecycle management,
+          developing solutions that are reliable, testable, and maintainable.</p>
+        <p>I bring a structured problem-solving approach, clear communication, and a strong interest in building
+          dependable software for complex operational environments. Outside of work, I enjoy exploring nature, hiking,
+          reading, and experimenting with emerging technologies.</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section fade-in">
+      <p class="section__label">Expertise</p>
+      <h2 class="section__title">Skills &amp; tools</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <p class="skill-card__title">Programming &amp; Frameworks</p>
+          <p class="skill-card__items">Java, Python, TypeScript, JavaScript, Spring Boot, React, Node.js</p>
         </div>
-      </section>
-
-      <!-- About -->
-      <section id="about" class="section fade-in">
-        <p class="section__label">About</p>
-        <h2 class="section__title">Who I am</h2>
-        <div class="prose">
-          <p><strong>Hi! I'm Dilan Sachintha.</strong> I'm a software engineer with around five years of software development experience and a strong foundation in cloud-native and distributed systems. I have worked extensively with Kubernetes, Docker, Python, Java, CI/CD automation, and software lifecycle management, developing solutions that are reliable, testable, and maintainable.</p>
-          <p>I bring a structured problem-solving approach, clear communication, and a strong interest in building dependable software for complex operational environments. Outside of work, I enjoy exploring nature, hiking, reading, and experimenting with emerging technologies.</p>
+        <div class="skill-card">
+          <p class="skill-card__title">Cloud &amp; Infrastructure</p>
+          <p class="skill-card__items">Docker, Kubernetes, Ansible, Helm, GCP, OpenShift</p>
         </div>
-      </section>
-
-      <!-- Skills -->
-      <section id="skills" class="section fade-in">
-        <p class="section__label">Expertise</p>
-        <h2 class="section__title">Skills &amp; tools</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <p class="skill-card__title">Programming Languages</p>
-            <p class="skill-card__items">Java, Python, JavaScript</p>
-          </div>
-          <div class="skill-card">
-            <p class="skill-card__title">Database / Data Platforms</p>
-            <p class="skill-card__items">MySQL, Hibernate, MongoDB, Apache Spark</p>
-          </div>
-          <div class="skill-card">
-            <p class="skill-card__title">Frameworks &amp; Runtimes</p>
-            <p class="skill-card__items">Spring Boot, React, Node.js</p>
-          </div>
-          <div class="skill-card">
-            <p class="skill-card__title">Cloud Technologies</p>
-            <p class="skill-card__items">Docker, Kubernetes, GCP, OpenShift</p>
-          </div>
-          <div class="skill-card">
-            <p class="skill-card__title">Testing Tools</p>
-            <p class="skill-card__items">JUnit, TestNG, Mockito, Robot</p>
-          </div>
-          <div class="skill-card">
-            <p class="skill-card__title">Messaging &amp; Streaming</p>
-            <p class="skill-card__items">RabbitMQ, Apache Kafka</p>
-          </div>
-          <div class="skill-card">
-            <p class="skill-card__title">Protocols</p>
-            <p class="skill-card__items">HTTP, gRPC, REST, FTP, MQTT</p>
-          </div>
-          <div class="skill-card">
-            <p class="skill-card__title">Monitoring</p>
-            <p class="skill-card__items">Prometheus, Grafana, Fluentd</p>
-          </div>
+        <div class="skill-card">
+          <p class="skill-card__title">Databases &amp; In-Memory</p>
+          <p class="skill-card__items">PostgreSQL, MariaDB, Redis, MySQL, MongoDB</p>
         </div>
-      </section>
-
-      <!-- Experience -->
-      <section id="experience" class="section fade-in">
-        <p class="section__label">Career</p>
-        <h2 class="section__title">Experience</h2>
-        <div class="timeline">
-
-          <div class="timeline__item">
-            <div class="timeline__header">
-              <span class="timeline__role">Summer Trainee / Thesis Worker</span>
-              <span class="timeline__company"><a href="https://nokia.com/" target="_blank" rel="noopener noreferrer">Nokia Solutions &amp; Networks</a>, Finland</span>
-              <span class="timeline__date">May 2025 – Present</span>
-            </div>
-            <p class="timeline__desc">Working with the large-scale, business-critical mediation platform, contributing to feature development, fixing critical customer issues and defects, and improving reliability.</p>
-            <ul class="timeline__bullets">
-              <li>Improved test automation and CI/CD pipelines, helping to streamline builds, automated tests, and product releases.</li>
-              <li>Completed a master's thesis with Nokia, designing and evaluating Kubernetes operators to replace Helm-based lifecycle management in the mediation product.</li>
-              <li>Gained hands-on experience with highly available, cloud-native application architecture, observability, and fault management.</li>
-              <li>Contributed to the Charging and Mediation team within CNS Product &amp; Engineering, collaborating with a multinational team across Europe, India, Malaysia, and China.</li>
-              <li>Built and maintained Jenkins jobs for CI/CD to improve software quality and developer experience.</li>
-            </ul>
-          </div>
-
-          <div class="timeline__item">
-            <div class="timeline__header">
-              <span class="timeline__role">Senior Software Engineer</span>
-              <span class="timeline__company"><a href="https://wso2.com/" target="_blank" rel="noopener noreferrer">WSO2 LLC</a>, Sri Lanka</span>
-              <span class="timeline__date">Apr 2021 – Aug 2024</span>
-            </div>
-            <p class="timeline__desc">Worked in the Ballerina team — an open-source, cloud-native programming language optimized for integration, running on the JVM.</p>
-            <ul class="timeline__bullets">
-              <li>Maintained HTTP2, gRPC, Kafka, RabbitMQ, FTP, and MQTT libraries for the Ballerina language using Java.</li>
-              <li>Proficient in analysing runtime issues like OOMs, performance degradations, and intermittent failures.</li>
-              <li>Handled Ballerina major/minor releases from development to community release ensuring smooth product delivery.</li>
-              <li>Increased code coverage, performed end-to-end testing, load-testing, and test automation of developed libraries.</li>
-              <li>Created a GitHub pipeline running load-tests in an Azure Kubernetes cluster to detect performance issues.</li>
-              <li>Led code reviews and effective source code management following open-source best practices.</li>
-            </ul>
-          </div>
-
-          <div class="timeline__item">
-            <div class="timeline__header">
-              <span class="timeline__role">Teaching Assistant</span>
-              <span class="timeline__company"><a href="https://cse.mrt.ac.lk/" target="_blank" rel="noopener noreferrer">University of Moratuwa</a>, Sri Lanka</span>
-              <span class="timeline__date">2020</span>
-            </div>
-            <p class="timeline__desc">Python teaching assistant for the Programming Fundamentals module. Guided students in problem-solving strategies, design, implementation, and troubleshooting.</p>
-          </div>
-
-          <div class="timeline__item">
-            <div class="timeline__header">
-              <span class="timeline__role">Intern Software Engineer</span>
-              <span class="timeline__company"><a href="https://directfn.lk/en/" target="_blank" rel="noopener noreferrer">DirectFN Technology</a>, Sri Lanka</span>
-              <span class="timeline__date">Jun 2019 – Dec 2019</span>
-            </div>
-            <ul class="timeline__bullets">
-              <li>Developed a server monitoring tool for stock market orders and server components using Python, Node.js, and Angular.</li>
-              <li>Built a log parsing system utilizing the Elasticsearch stack to predict upcoming server downtimes.</li>
-            </ul>
-          </div>
-
-          <div class="timeline__item">
-            <div class="timeline__header">
-              <span class="timeline__role">Freelancer</span>
-              <span class="timeline__company"><a href="https://www.fiverr.com/" target="_blank" rel="noopener noreferrer">Fiverr</a></span>
-              <span class="timeline__date">2020 – 2021</span>
-            </div>
-            <p class="timeline__desc">Offered data conversion services to clients across the USA, Europe, UK, and Australia — transforming large datasets across JSON, CSV, YAML, XLSX, and XML formats using Python.</p>
-          </div>
-
+        <div class="skill-card">
+          <p class="skill-card__title">Streaming &amp; Messaging</p>
+          <p class="skill-card__items">Apache Kafka, RabbitMQ, JMS, MQTT</p>
         </div>
-      </section>
+        <div class="skill-card">
+          <p class="skill-card__title">Big Data &amp; Processing</p>
+          <p class="skill-card__items">Apache Spark, Hadoop</p>
+        </div>
+        <div class="skill-card">
+          <p class="skill-card__title">Observability &amp; Monitoring</p>
+          <p class="skill-card__items">Prometheus, Grafana, OpenSearch, Fluentd</p>
+        </div>
+        <div class="skill-card">
+          <p class="skill-card__title">CI/CD &amp; DevOps</p>
+          <p class="skill-card__items">GitOps, Jenkins, Argo CD, Linux, Bash</p>
+        </div>
+        <div class="skill-card">
+          <p class="skill-card__title">Developer Tools &amp; AI</p>
+          <p class="skill-card__items">Git, REST APIs, Cursor, Copilot, Elasticsearch</p>
+        </div>
+      </div>
+    </section>
 
-      <!-- Thesis -->
-      <section id="thesis" class="section fade-in">
-        <p class="section__label">Academic</p>
-        <h2 class="section__title">Master's Thesis</h2>
+    <!-- Experience -->
+    <section id="experience" class="section fade-in">
+      <p class="section__label">Career</p>
+      <h2 class="section__title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline__item">
+          <div class="timeline__header">
+            <span class="timeline__role">Thesis Worker</span>
+            <span class="timeline__company"><a href="https://nokia.com/" target="_blank" rel="noopener noreferrer">Nokia
+                Solutions &amp; Networks</a>, Finland</span>
+            <span class="timeline__date">May 2025 – Present</span>
+          </div>
+          <p class="timeline__desc">Working with Java backend development, build pipelines, and Kubernetes automation of
+            the mediation telecommunications platform handling billions of events per day.</p>
+          <ul class="timeline__bullets">
+            <li>Contributed to feature development, working closely with architects and product owners to turn
+              requirements into reliable backend code.</li>
+            <li>Resolved production defects across the full stack (React, Spring Boot backends, PostgreSQL/MariaDB
+              databases and infra automation) using debugging tools, system logs, and metrics.</li>
+            <li>Implemented automated regression and smoke testing pipelines across multi-environment configurations to
+              ensure platform resilience prior to releases.</li>
+            <li>Authored a master's thesis on creating Kubernetes Operators to replace Helm-based lifecycle management
+              enabling declarative reconciliation, automated self-healing, and enhanced observability.</li>
+            <li>Improved platform monitoring using OpenSearch, Prometheus, and Grafana, helping identify system
+              bottlenecks and keep mediation services reliable.</li>
+          </ul>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__header">
+            <span class="timeline__role">Senior Software Engineer</span>
+            <span class="timeline__company"><a href="https://wso2.com/" target="_blank" rel="noopener noreferrer">WSO2
+                LLC</a>, Sri Lanka</span>
+            <span class="timeline__date">Apr 2021 – Aug 2024</span>
+          </div>
+          <p class="timeline__desc">Worked in the Open-Source Ballerina platform (a programming language designed for
+            cloud-native integration) handling design, development, documentation, and customer support of Java-based
+            enterprise integration libraries powering cloud-native workflows.</p>
+          <ul class="timeline__bullets">
+            <li>Owned the full lifecycle of core libraries and APIs and used proper design patterns and abstractions to
+              ensure backward compatibility and minimal user impact.</li>
+            <li>Architected asynchronous event-driven pipelines using Kafka to decouple microservices, eliminating
+              message losses during traffic spikes.</li>
+            <li>Authored unit, integration, and load tests raising test coverage to over 85%, significantly reducing
+              regression bugs in production releases.</li>
+            <li>Led technical discussions, architecture designs, and structured code reviews across the team ensuring
+              high code quality and clean modular design.</li>
+            <li>Resolved critical production incidents, performance issues, database bottlenecks, and memory leaks using
+              memory dumps, trace logs, observability metrics, profiling tools, and network tracing tools.</li>
+            <li>Refactored and modernized the platform's OpenAPI library to improve developer experience, transforming
+              an unmaintainable codebase into robust, well-structured APIs for downstream services.</li>
+          </ul>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__header">
+            <span class="timeline__role">Teaching Assistant</span>
+            <span class="timeline__company"><a href="https://cse.mrt.ac.lk/" target="_blank"
+                rel="noopener noreferrer">University of Moratuwa</a>, Sri Lanka</span>
+            <span class="timeline__date">2020</span>
+          </div>
+          <p class="timeline__desc">Python teaching assistant for the Programming Fundamentals module. Guided students
+            in problem-solving strategies, design, implementation, and troubleshooting.</p>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__header">
+            <span class="timeline__role">Intern Software Engineer</span>
+            <span class="timeline__company"><a href="https://directfn.lk/en/" target="_blank"
+                rel="noopener noreferrer">DirectFN Technology</a>, Sri Lanka</span>
+            <span class="timeline__date">Jun 2019 – Dec 2019</span>
+          </div>
+          <p class="timeline__desc">Worked in the team that manages the stock brokerage platform and actively engaged in
+            development related to monitoring components.</p>
+          <ul class="timeline__bullets">
+            <li>Developed a server monitoring tool which monitors components in the stock brokerage using Python,
+              Angular, TypeScript, and Node.js.</li>
+            <li>Built a log parsing system utilizing the Elasticsearch stack to predict upcoming server downtimes.</li>
+          </ul>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__header">
+            <span class="timeline__role">Freelancer</span>
+            <span class="timeline__company"><a href="https://www.fiverr.com/" target="_blank"
+                rel="noopener noreferrer">Fiverr</a></span>
+            <span class="timeline__date">2020 – 2021</span>
+          </div>
+          <p class="timeline__desc">Offered data conversion services to clients across the USA, Europe, UK, and
+            Australia — transforming large datasets across JSON, CSV, YAML, XLSX, and XML formats using Python.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section fade-in">
+      <p class="section__label">Portfolio</p>
+      <h2 class="section__title">Projects</h2>
+      <div class="projects-list">
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <h3 class="project-card__title">
+              <a href="https://github.com/dilanSachi/uh-compiler" target="_blank" rel="noopener noreferrer">UH-Compiler
+                &nearr;</a>
+            </h3>
+            <span class="project-card__date">2025</span>
+          </div>
+          <p class="project-card__desc">Developed a compiler converting high-level programming language code into
+            optimized assembly applying core compiler concepts and AST-driven transformations.</p>
+          <ul class="project-card__bullets">
+            <li>Lexical &amp; Syntax Analysis, Abstract Syntax Tree (AST) generation, and error handling.</li>
+            <li>Intermediate Representation (IR) and code optimization pipeline.</li>
+            <li>Assembly code generation for target machine architectures.</li>
+          </ul>
+          <div class="project-card__tags">
+            <span class="tag">Compilers</span>
+            <span class="tag">AST</span>
+            <span class="tag">Code Optimization</span>
+            <span class="tag">Assembly Generation</span>
+            <span class="tag">Error Handling</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <h3 class="project-card__title">
+              <a href="https://github.com/ballerina-platform/module-ballerina-http" target="_blank"
+                rel="noopener noreferrer">Ballerina HTTP Module &nearr;</a>
+            </h3>
+            <span class="project-card__date">2021 – 2024</span>
+          </div>
+          <p class="project-card__desc">Contributed to the Open-Source Ballerina HTTP module, a core component that
+            powers HTTP-based services within the Ballerina ecosystem.</p>
+          <ul class="project-card__bullets">
+            <li>Improved HTTP/2 protocol based request/response handling.</li>
+            <li>Implemented performance optimizations to support scalable and resilient microservices.</li>
+          </ul>
+          <div class="project-card__tags">
+            <span class="tag">Java</span>
+            <span class="tag">HTTP/2</span>
+            <span class="tag">Microservices</span>
+            <span class="tag">Ballerina</span>
+            <span class="tag">Open Source</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <h3 class="project-card__title">
+              <a href="https://github.com/ballerina-platform/module-ballerinax-kafka" target="_blank"
+                rel="noopener noreferrer">Ballerina Kafka Module &nearr;</a>
+            </h3>
+            <span class="project-card__date">2021 – 2024</span>
+          </div>
+          <p class="project-card__desc">Played a key role in developing and maintaining the Open-Source Ballerina Kafka
+            module, enabling seamless integration with Apache Kafka for building real-time data streaming applications.
+          </p>
+          <ul class="project-card__bullets">
+            <li>Enhanced message production and consumption capabilities, ensuring fault tolerance and providing robust
+              configuration options.</li>
+            <li>Engineered secure communication features including SSL/TLS support and SASL/SCRAM authentication.</li>
+          </ul>
+          <div class="project-card__tags">
+            <span class="tag">Apache Kafka</span>
+            <span class="tag">Event Streaming</span>
+            <span class="tag">Java</span>
+            <span class="tag">SSL/TLS</span>
+            <span class="tag">SASL/SCRAM</span>
+            <span class="tag">Open Source</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section fade-in">
+      <p class="section__label">Education</p>
+      <h2 class="section__title">Academic background</h2>
+      <div class="edu-list">
+        <div class="edu-item">
+          <p class="edu-item__degree">M.Sc. in Computer Science</p>
+          <p class="edu-item__school">University of Helsinki, Finland</p>
+          <p class="edu-item__desc">Completed advanced coursework in network technologies, distributed systems, parallel
+            programming, machine learning, algorithms, and compilers. Master's thesis completed in collaboration with
+            Nokia on Kubernetes operators for cloud-native lifecycle management.</p>
+        </div>
+        <div class="edu-item">
+          <p class="edu-item__degree">B.Sc. (Hons) in Computer Science &amp; Engineering</p>
+          <p class="edu-item__school">University of Moratuwa, Sri Lanka</p>
+          <p class="edu-item__desc">Strong foundation in object-oriented programming, design patterns, data structures,
+            algorithms, networks, computer architecture, machine learning, and distributed systems.</p>
+          <span class="edu-item__badge">1st Class</span>
+        </div>
+        <div class="edu-item">
+          <p class="edu-item__degree">GCE Advanced Level</p>
+          <p class="edu-item__school">Mahinda College, Sri Lanka</p>
+          <p class="edu-item__desc">Passed with distinction — 64th in the island, 5th in the district. Subjects:
+            Physics, Pure Mathematics, Applied Mathematics, Chemistry, English, ICT.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research & Publications -->
+    <section id="research" class="section fade-in">
+      <p class="section__label">Academic &amp; Publications</p>
+      <h2 class="section__title">Research &amp; Publications</h2>
+      <div class="research-list">
+
         <div class="thesis-card">
-          <p class="thesis-card__title">An empirical evaluation between Helm and Kubernetes Operators for managing life cycle of cloud-native components</p>
+          <p class="thesis-card__title">
+            <a href="http://hdl.handle.net/10138/638233" target="_blank" rel="noopener noreferrer">Evaluation between
+              Helm and Kubernetes Operators for managing lifecycle of cloud-native components &nearr;</a>
+          </p>
           <p class="thesis-card__meta">University of Helsinki &middot; In collaboration with Nokia &middot; 2025</p>
-          <p class="thesis-card__desc">As part of my M.Sc. in Computer Science at the University of Helsinki, I completed my master's thesis in collaboration with Nokia. The research focused on designing and evaluating Kubernetes operators as a replacement for Helm-based lifecycle management in large-scale business-critical applications.</p>
-          <p class="thesis-card__desc">The work involved hands-on development and evaluation of operator patterns in a production-grade, highly available cloud-native environment — covering observability, fault management, and automated lifecycle operations at scale.</p>
+          <p class="thesis-card__desc">As part of my M.Sc. in Computer Science at the University of Helsinki, I
+            completed my master's thesis in collaboration with Nokia. The research focused on designing and evaluating
+            Kubernetes operators as a replacement for Helm-based lifecycle management in large-scale business-critical
+            telecommunications applications.</p>
+          <p class="thesis-card__desc">The work involved hands-on development and evaluation of operator patterns in a
+            production-grade, highly available cloud-native environment — covering declarative reconciliation, automated
+            self-healing, observability, and automated lifecycle operations at scale.</p>
+          <div class="thesis-card__links">
+            <a href="http://hdl.handle.net/10138/638233" target="_blank" rel="noopener noreferrer">Read Master's Thesis
+              Publication (Helda Open Repository) &nearr;</a>
+          </div>
           <div class="thesis-card__tags">
             <span class="tag">Kubernetes</span>
             <span class="tag">Operators</span>
             <span class="tag">Helm</span>
+            <span class="tag">Go</span>
             <span class="tag">Cloud-Native</span>
             <span class="tag">CI/CD</span>
             <span class="tag">Observability</span>
           </div>
         </div>
-      </section>
 
-      <!-- Education -->
-      <section id="education" class="section fade-in">
-        <p class="section__label">Education</p>
-        <h2 class="section__title">Academic background</h2>
-        <div class="edu-list">
-          <div class="edu-item">
-            <p class="edu-item__degree">M.Sc. in Computer Science</p>
-            <p class="edu-item__school">University of Helsinki, Finland</p>
-            <p class="edu-item__desc">Completed advanced coursework in network technologies, distributed systems, parallel programming, machine learning, algorithms, and compilers. Master's thesis completed in collaboration with Nokia on Kubernetes operators for cloud-native lifecycle management.</p>
+        <div class="thesis-card">
+          <p class="thesis-card__title">Sinhala–English Document Alignment for Machine Translation Systems</p>
+          <p class="thesis-card__meta">University of Moratuwa &middot; 2020 – 2021 &middot; Python, Google Colab,
+            PyTorch</p>
+          <p class="thesis-card__desc">Final-year group research at the University of Moratuwa. Focused on optimizing
+            parallel corpus mining pipelines for low-resource languages — aligning web documents and sentences using
+            vector representations and semantic similarity scoring.</p>
+          <div class="thesis-card__links">
+            <a href="https://ieeexplore.ieee.org/abstract/document/9325462" target="_blank"
+              rel="noopener noreferrer">Sinhala and English document alignment using statistical machine translation
+              &nearr;</a><br>
+            <a href="https://link.springer.com/article/10.1007/s10115-022-01761-x" target="_blank"
+              rel="noopener noreferrer">Exploiting bilingual lexicons to improve multilingual embedding-based document
+              and sentence alignment &nearr;</a>
           </div>
-          <div class="edu-item">
-            <p class="edu-item__degree">B.Sc. (Hons) in Computer Science &amp; Engineering</p>
-            <p class="edu-item__school">University of Moratuwa, Sri Lanka</p>
-            <p class="edu-item__desc">Strong foundation in object-oriented programming, design patterns, data structures, algorithms, networks, computer architecture, machine learning, and distributed systems.</p>
-            <span class="edu-item__badge">1st Class</span>
-          </div>
-          <div class="edu-item">
-            <p class="edu-item__degree">GCE Advanced Level</p>
-            <p class="edu-item__school">Mahinda College, Sri Lanka</p>
-            <p class="edu-item__desc">Passed with distinction — 64th in the island, 5th in the district. Subjects: Physics, Pure Mathematics, Applied Mathematics, Chemistry, English, ICT.</p>
+          <div class="thesis-card__tags">
+            <span class="tag">Machine Translation</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Parallel Corpus</span>
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Google Colab</span>
           </div>
         </div>
-      </section>
 
-      <!-- Research -->
-      <section id="research" class="section fade-in">
-        <p class="section__label">Publications</p>
-        <h2 class="section__title">Research &amp; publications</h2>
-        <div class="research-item">
-          <p class="research-item__title">Sinhala–English Document Alignment for Machine Translation Systems</p>
-          <p class="research-item__date">2020 – 2021 &middot; Python, Google Colab, PyTorch</p>
-          <p class="research-item__desc">Final-year group research at the University of Moratuwa. Focused on optimizing parallel corpus mining pipelines for low-resource languages — aligning web documents and sentences using vector representations and semantic similarity scoring.</p>
-          <div class="research-item__links">
-            <a href="https://ieeexplore.ieee.org/abstract/document/9325462" target="_blank" rel="noopener noreferrer">Sinhala and English document alignment using statistical machine translation</a><br>
-            <a href="https://link.springer.com/article/10.1007/s10115-022-01761-x" target="_blank" rel="noopener noreferrer">Exploiting bilingual lexicons to improve multilingual embedding-based document and sentence alignment</a>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates" class="section fade-in">
+      <p class="section__label">Credentials</p>
+      <h2 class="section__title">Licenses &amp; certificates</h2>
+      <div class="card-grid">
+        <article class="card">
+          <a href="https://courses.mooc.fi/certificates/validate/92swsu3b3yzrvwr" target="_blank"
+            rel="noopener noreferrer">
+            <img src="images/devopswk8s-certificate.jpg" alt="" class="card__img">
+          </a>
+          <div class="card__body">
+            <p class="card__meta">Feb 2026 &middot; University of Helsinki</p>
+            <p class="card__title"><a href="https://courses.mooc.fi/certificates/validate/92swsu3b3yzrvwr"
+                target="_blank" rel="noopener noreferrer">DevOps with Kubernetes</a></p>
           </div>
+        </article>
+        <article class="card">
+          <a href="https://www.linkedin.com/learning/certificates/27bf88eafbbe35e28f71a141b8109ede184f6a5cf70495085bd45eecf31c6a39?trk=share_certificate"
+            target="_blank" rel="noopener noreferrer">
+            <img src="images/extending_k8s_with_operator_patterns.png" alt="" class="card__img">
+          </a>
+          <div class="card__body">
+            <p class="card__meta">Nov 2025 &middot; Kubernetes</p>
+            <p class="card__title"><a
+                href="https://www.linkedin.com/learning/certificates/27bf88eafbbe35e28f71a141b8109ede184f6a5cf70495085bd45eecf31c6a39?trk=share_certificate"
+                target="_blank" rel="noopener noreferrer">Extending Kubernetes with Operator Patterns</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <a href="https://www.linkedin.com/learning/certificates/cfa279d79f0af4d484939486cd186c191464770922536f35e52ea670ac16a103?trk=share_certificate"
+            target="_blank" rel="noopener noreferrer">
+            <img src="images/deploying-spring-boot-apps.jpeg" alt="" class="card__img">
+          </a>
+          <div class="card__body">
+            <p class="card__meta">Mar 2025 &middot; Spring Cloud</p>
+            <p class="card__title"><a
+                href="https://www.linkedin.com/learning/certificates/cfa279d79f0af4d484939486cd186c191464770922536f35e52ea670ac16a103?trk=share_certificate"
+                target="_blank" rel="noopener noreferrer">Deploy Spring Boot Applications</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <a href="https://www.linkedin.com/learning/certificates/d054049c7046bb3c06d6eb07bd3bf5f7abf9a2ccc124209d891f2265dcd9951a?trk=share_certificate"
+            target="_blank" rel="noopener noreferrer">
+            <img src="images/spring-boot-2.0-essential-training.jpeg" alt="" class="card__img">
+          </a>
+          <div class="card__body">
+            <p class="card__meta">Mar 2025 &middot; Spring Boot</p>
+            <p class="card__title"><a
+                href="https://www.linkedin.com/learning/certificates/d054049c7046bb3c06d6eb07bd3bf5f7abf9a2ccc124209d891f2265dcd9951a?trk=share_certificate"
+                target="_blank" rel="noopener noreferrer">Spring Boot 2.0 Essential Training</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <a href="https://www.linkedin.com/learning/certificates/bb9550a08706400284db0329815a0402a122d1d5d7cafc1deba82d996ef3b1f3?trk=share_certificate"
+            target="_blank" rel="noopener noreferrer">
+            <img src="images/linkedIn-Rest-API-Design.jpeg" alt="" class="card__img">
+          </a>
+          <div class="card__body">
+            <p class="card__meta">Feb 2025 &middot; REST API</p>
+            <p class="card__title"><a
+                href="https://www.linkedin.com/learning/certificates/bb9550a08706400284db0329815a0402a122d1d5d7cafc1deba82d996ef3b1f3?trk=share_certificate"
+                target="_blank" rel="noopener noreferrer">Designing RESTful APIs</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <a href="https://certificates.mooc.fi/validate/9nl2fj7vxv" target="_blank" rel="noopener noreferrer">
+            <img src="images/certificate-elements-of-ai.png" alt="" class="card__img">
+          </a>
+          <div class="card__body">
+            <p class="card__meta">Sep 2024 &middot; AI</p>
+            <p class="card__title"><a href="https://certificates.mooc.fi/validate/9nl2fj7vxv" target="_blank"
+                rel="noopener noreferrer">Elements of AI</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <a href="https://certificates.mooc.fi/validate/7lag5j3yapv" target="_blank" rel="noopener noreferrer">
+            <img src="images/certificate-big-data-platforms-24.png" alt="" class="card__img">
+          </a>
+          <div class="card__body">
+            <p class="card__meta">Oct 2024 &middot; Big Data</p>
+            <p class="card__title"><a href="https://certificates.mooc.fi/validate/7lag5j3yapv" target="_blank"
+                rel="noopener noreferrer">Big Data Platforms</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Blogs -->
+    <section id="blog" class="section fade-in">
+      <p class="section__label">Writing</p>
+      <h2 class="section__title">Blogs</h2>
+      <div class="card-grid">
+        <article class="card">
+          <a href="https://medium.com/javarevisited/what-to-expect-in-java-15-a62d0033beb9" target="_blank"
+            rel="noopener noreferrer">
+            <img src="images/coffee_unsplash.jpg" alt="" class="card__img">
+          </a>
+          <div class="card__body">
+            <p class="card__meta">Jul 2020 &middot; Java</p>
+            <p class="card__title"><a href="https://medium.com/javarevisited/what-to-expect-in-java-15-a62d0033beb9"
+                target="_blank" rel="noopener noreferrer">What to Expect in Java 15</a></p>
+            <p class="card__desc">A look at new features in Java version 15.</p>
+          </div>
+        </article>
+        <article class="card">
+          <a href="https://betterprogramming.pub/let-no-one-slide-through-the-gates-77ed57f76455" target="_blank"
+            rel="noopener noreferrer">
+            <img src="images/metal_lock.jpg" alt="" class="card__img">
+          </a>
+          <div class="card__body">
+            <p class="card__meta">Jun 2020 &middot; Security</p>
+            <p class="card__title"><a
+                href="https://betterprogramming.pub/let-no-one-slide-through-the-gates-77ed57f76455" target="_blank"
+                rel="noopener noreferrer">Let No One Slide Through the Gates</a></p>
+            <p class="card__desc">Improving the security of your Node.js app.</p>
+          </div>
+        </article>
+        <article class="card">
+          <a href="https://levelup.gitconnected.com/json-vs-yaml-6aa0243aefc6" target="_blank"
+            rel="noopener noreferrer">
+            <img src="images/json_yaml.webp" alt="" class="card__img">
+          </a>
+          <div class="card__body">
+            <p class="card__meta">Jun 2020 &middot; Data</p>
+            <p class="card__title"><a href="https://levelup.gitconnected.com/json-vs-yaml-6aa0243aefc6" target="_blank"
+                rel="noopener noreferrer">JSON vs YAML</a></p>
+            <p class="card__desc">A dive into two popular data serialization languages.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section id="video" class="section fade-in">
+      <p class="section__label">Talks</p>
+      <h2 class="section__title">Videos</h2>
+      <div class="video-wrapper" id="videoPlayer" data-video-id="vAndqmFPaYI">
+        <button class="video-play" id="videoPlay" aria-label="Play Ballerina Integration Tutorial">
+          <img src="https://img.youtube.com/vi/vAndqmFPaYI/hqdefault.jpg"
+            alt="Ballerina Integration Tutorial thumbnail">
+          <span class="video-play__icon" aria-hidden="true">&#9654;</span>
+        </button>
+      </div>
+      <p class="card__meta">Nov 2023 &middot; Ballerina, GraphQL, Kafka, Docker</p>
+      <p class="card__title" style="margin-bottom:.75rem;">Ballerina Integration Tutorial</p>
+      <p class="card__desc">A step-by-step guide to building a GraphQL API with the Ballerina Programming Language,
+        integrating Apache Kafka, and deploying the system with Docker.</p>
+    </section>
+
+    <!-- Memories -->
+    <section id="memories" class="section fade-in">
+      <p class="section__label">Life</p>
+      <h2 class="section__title">Memories</h2>
+      <div class="gallery">
+        <div class="gallery__item">
+          <img src="images/knuckles_infinity_pool.jpg" alt="Duwili Ella Hike">
+          <span class="gallery__caption">Duwili Ella Hike</span>
         </div>
-      </section>
-
-      <!-- Certificates -->
-      <section id="certificates" class="section fade-in">
-        <p class="section__label">Credentials</p>
-        <h2 class="section__title">Licenses &amp; certificates</h2>
-        <div class="card-grid">
-          <article class="card">
-            <a href="https://courses.mooc.fi/certificates/validate/92swsu3b3yzrvwr" target="_blank" rel="noopener noreferrer">
-              <img src="images/devopswk8s-certificate.jpg" alt="" class="card__img">
-            </a>
-            <div class="card__body">
-              <p class="card__meta">Feb 2026 &middot; University of Helsinki</p>
-              <p class="card__title"><a href="https://courses.mooc.fi/certificates/validate/92swsu3b3yzrvwr" target="_blank" rel="noopener noreferrer">DevOps with Kubernetes</a></p>
-            </div>
-          </article>
-          <article class="card">
-            <a href="https://www.linkedin.com/learning/certificates/27bf88eafbbe35e28f71a141b8109ede184f6a5cf70495085bd45eecf31c6a39?trk=share_certificate" target="_blank" rel="noopener noreferrer">
-              <img src="images/extending_k8s_with_operator_patterns.png" alt="" class="card__img">
-            </a>
-            <div class="card__body">
-              <p class="card__meta">Nov 2025 &middot; Kubernetes</p>
-              <p class="card__title"><a href="https://www.linkedin.com/learning/certificates/27bf88eafbbe35e28f71a141b8109ede184f6a5cf70495085bd45eecf31c6a39?trk=share_certificate" target="_blank" rel="noopener noreferrer">Extending Kubernetes with Operator Patterns</a></p>
-            </div>
-          </article>
-          <article class="card">
-            <a href="https://www.linkedin.com/learning/certificates/cfa279d79f0af4d484939486cd186c191464770922536f35e52ea670ac16a103?trk=share_certificate" target="_blank" rel="noopener noreferrer">
-              <img src="images/deploying-spring-boot-apps.jpeg" alt="" class="card__img">
-            </a>
-            <div class="card__body">
-              <p class="card__meta">Mar 2025 &middot; Spring Cloud</p>
-              <p class="card__title"><a href="https://www.linkedin.com/learning/certificates/cfa279d79f0af4d484939486cd186c191464770922536f35e52ea670ac16a103?trk=share_certificate" target="_blank" rel="noopener noreferrer">Deploy Spring Boot Applications</a></p>
-            </div>
-          </article>
-          <article class="card">
-            <a href="https://www.linkedin.com/learning/certificates/d054049c7046bb3c06d6eb07bd3bf5f7abf9a2ccc124209d891f2265dcd9951a?trk=share_certificate" target="_blank" rel="noopener noreferrer">
-              <img src="images/spring-boot-2.0-essential-training.jpeg" alt="" class="card__img">
-            </a>
-            <div class="card__body">
-              <p class="card__meta">Mar 2025 &middot; Spring Boot</p>
-              <p class="card__title"><a href="https://www.linkedin.com/learning/certificates/d054049c7046bb3c06d6eb07bd3bf5f7abf9a2ccc124209d891f2265dcd9951a?trk=share_certificate" target="_blank" rel="noopener noreferrer">Spring Boot 2.0 Essential Training</a></p>
-            </div>
-          </article>
-          <article class="card">
-            <a href="https://www.linkedin.com/learning/certificates/bb9550a08706400284db0329815a0402a122d1d5d7cafc1deba82d996ef3b1f3?trk=share_certificate" target="_blank" rel="noopener noreferrer">
-              <img src="images/linkedIn-Rest-API-Design.jpeg" alt="" class="card__img">
-            </a>
-            <div class="card__body">
-              <p class="card__meta">Feb 2025 &middot; REST API</p>
-              <p class="card__title"><a href="https://www.linkedin.com/learning/certificates/bb9550a08706400284db0329815a0402a122d1d5d7cafc1deba82d996ef3b1f3?trk=share_certificate" target="_blank" rel="noopener noreferrer">Designing RESTful APIs</a></p>
-            </div>
-          </article>
-          <article class="card">
-            <a href="https://certificates.mooc.fi/validate/9nl2fj7vxv" target="_blank" rel="noopener noreferrer">
-              <img src="images/certificate-elements-of-ai.png" alt="" class="card__img">
-            </a>
-            <div class="card__body">
-              <p class="card__meta">Sep 2024 &middot; AI</p>
-              <p class="card__title"><a href="https://certificates.mooc.fi/validate/9nl2fj7vxv" target="_blank" rel="noopener noreferrer">Elements of AI</a></p>
-            </div>
-          </article>
-          <article class="card">
-            <a href="https://certificates.mooc.fi/validate/7lag5j3yapv" target="_blank" rel="noopener noreferrer">
-              <img src="images/certificate-big-data-platforms-24.png" alt="" class="card__img">
-            </a>
-            <div class="card__body">
-              <p class="card__meta">Oct 2024 &middot; Big Data</p>
-              <p class="card__title"><a href="https://certificates.mooc.fi/validate/7lag5j3yapv" target="_blank" rel="noopener noreferrer">Big Data Platforms</a></p>
-            </div>
-          </article>
+        <div class="gallery__item">
+          <img src="images/diyaluma.jpg" alt="Diyaluma Falls Hike">
+          <span class="gallery__caption">Diyaluma Falls Hike</span>
         </div>
-      </section>
-
-      <!-- Blogs -->
-      <section id="blog" class="section fade-in">
-        <p class="section__label">Writing</p>
-        <h2 class="section__title">Blogs</h2>
-        <div class="card-grid">
-          <article class="card">
-            <a href="https://medium.com/javarevisited/what-to-expect-in-java-15-a62d0033beb9" target="_blank" rel="noopener noreferrer">
-              <img src="images/coffee_unsplash.jpg" alt="" class="card__img">
-            </a>
-            <div class="card__body">
-              <p class="card__meta">Jul 2020 &middot; Java</p>
-              <p class="card__title"><a href="https://medium.com/javarevisited/what-to-expect-in-java-15-a62d0033beb9" target="_blank" rel="noopener noreferrer">What to Expect in Java 15</a></p>
-              <p class="card__desc">A look at new features in Java version 15.</p>
-            </div>
-          </article>
-          <article class="card">
-            <a href="https://betterprogramming.pub/let-no-one-slide-through-the-gates-77ed57f76455" target="_blank" rel="noopener noreferrer">
-              <img src="images/metal_lock.jpg" alt="" class="card__img">
-            </a>
-            <div class="card__body">
-              <p class="card__meta">Jun 2020 &middot; Security</p>
-              <p class="card__title"><a href="https://betterprogramming.pub/let-no-one-slide-through-the-gates-77ed57f76455" target="_blank" rel="noopener noreferrer">Let No One Slide Through the Gates</a></p>
-              <p class="card__desc">Improving the security of your Node.js app.</p>
-            </div>
-          </article>
-          <article class="card">
-            <a href="https://levelup.gitconnected.com/json-vs-yaml-6aa0243aefc6" target="_blank" rel="noopener noreferrer">
-              <img src="images/json_yaml.webp" alt="" class="card__img">
-            </a>
-            <div class="card__body">
-              <p class="card__meta">Jun 2020 &middot; Data</p>
-              <p class="card__title"><a href="https://levelup.gitconnected.com/json-vs-yaml-6aa0243aefc6" target="_blank" rel="noopener noreferrer">JSON vs YAML</a></p>
-              <p class="card__desc">A dive into two popular data serialization languages.</p>
-            </div>
-          </article>
+        <div class="gallery__item">
+          <img src="images/knuckles_infinity_pool_2.jpg" alt="Duwili Ella Hike">
+          <span class="gallery__caption">Duwili Ella Hike</span>
         </div>
-      </section>
-
-      <!-- Video -->
-      <section id="video" class="section fade-in">
-        <p class="section__label">Talks</p>
-        <h2 class="section__title">Videos</h2>
-        <div class="video-wrapper" id="videoPlayer" data-video-id="vAndqmFPaYI">
-          <button class="video-play" id="videoPlay" aria-label="Play Ballerina Integration Tutorial">
-            <img src="https://img.youtube.com/vi/vAndqmFPaYI/hqdefault.jpg" alt="Ballerina Integration Tutorial thumbnail">
-            <span class="video-play__icon" aria-hidden="true">&#9654;</span>
-          </button>
+        <div class="gallery__item">
+          <img src="images/engagement.jpg" alt="My Engagement">
+          <span class="gallery__caption">My Engagement</span>
         </div>
-        <p class="card__meta">Nov 2023 &middot; Ballerina, GraphQL, Kafka, Docker</p>
-        <p class="card__title" style="margin-bottom:.75rem;">Ballerina Integration Tutorial</p>
-        <p class="card__desc">A step-by-step guide to building a GraphQL API with the Ballerina Programming Language, integrating Apache Kafka, and deploying the system with Docker.</p>
-      </section>
-
-      <!-- Memories -->
-      <section id="memories" class="section fade-in">
-        <p class="section__label">Life</p>
-        <h2 class="section__title">Memories</h2>
-        <div class="gallery">
-          <div class="gallery__item">
-            <img src="images/knuckles_infinity_pool.jpg" alt="Duwili Ella Hike">
-            <span class="gallery__caption">Duwili Ella Hike</span>
-          </div>
-          <div class="gallery__item">
-            <img src="images/diyaluma.jpg" alt="Diyaluma Falls Hike">
-            <span class="gallery__caption">Diyaluma Falls Hike</span>
-          </div>
-          <div class="gallery__item">
-            <img src="images/knuckles_infinity_pool_2.jpg" alt="Duwili Ella Hike">
-            <span class="gallery__caption">Duwili Ella Hike</span>
-          </div>
-          <div class="gallery__item">
-            <img src="images/engagement.jpg" alt="My Engagement">
-            <span class="gallery__caption">My Engagement</span>
-          </div>
-          <div class="gallery__item">
-            <img src="images/kadiyanlena_falls.jpg" alt="Kadiyanlena Falls">
-            <span class="gallery__caption">Kadiyanlena Falls</span>
-          </div>
-          <div class="gallery__item">
-            <img src="images/diving.jpg" alt="Diving Tryout">
-            <span class="gallery__caption">Diving Tryout</span>
-          </div>
-          <div class="gallery__item gallery__item--contain">
-            <img src="images/downhill_skiing.jpg" alt="Downhill Skiing">
-            <span class="gallery__caption">Downhill Skiing</span>
-          </div>
-          <div class="gallery__item">
-            <img src="images/rovaniemi_aurora.jpg" alt="Rovaniemi Aurora">
-            <span class="gallery__caption">Northern Lights in Rovaniemi</span>
-          </div>
-          <div class="gallery__item">
-            <img src="images/snowmobile.jpg" alt="Snowmobile">
-            <span class="gallery__caption">Snowmobiling in Ounasjoki</span>
-          </div>
+        <div class="gallery__item">
+          <img src="images/kadiyanlena_falls.jpg" alt="Kadiyanlena Falls">
+          <span class="gallery__caption">Kadiyanlena Falls</span>
         </div>
-      </section>
+        <div class="gallery__item">
+          <img src="images/diving.jpg" alt="Diving Tryout">
+          <span class="gallery__caption">Diving Tryout</span>
+        </div>
+        <div class="gallery__item gallery__item--contain">
+          <img src="images/downhill_skiing.jpg" alt="Downhill Skiing">
+          <span class="gallery__caption">Downhill Skiing</span>
+        </div>
+        <div class="gallery__item">
+          <img src="images/rovaniemi_aurora.jpg" alt="Rovaniemi Aurora">
+          <span class="gallery__caption">Northern Lights in Rovaniemi</span>
+        </div>
+        <div class="gallery__item">
+          <img src="images/snowmobile.jpg" alt="Snowmobile">
+          <span class="gallery__caption">Snowmobiling in Ounasjoki</span>
+        </div>
+      </div>
+    </section>
 
-      <footer class="footer">
-        <p>&copy; 2026 Dilan Sachintha &middot; Vantaa, Finland</p>
-      </footer>
+    <footer class="footer">
+      <p>&copy; 2026 Dilan Sachintha &middot; Vantaa, Finland</p>
+    </footer>
 
-    </main>
+  </main>
 
   <script src="js/app.js"></script>
 </body>
+
 </html>
