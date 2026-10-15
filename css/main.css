@@ -226,6 +226,10 @@ ul { list-style: none; }
   line-height: 1.7;
 }
 
+.hero__subtitle + .hero__subtitle {
+  margin-top: 1rem;
+}
+
 .hero__gallery {
   position: relative;
   width: 100%;
