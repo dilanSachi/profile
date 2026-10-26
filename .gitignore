@@ -1,0 +1,7 @@
+# macOS
+.DS_Store
+*.DS_Store
+
+# Temporary & cache files
+.sass-cache/
+*.log
