@@ -103,59 +103,77 @@
     });
   }
 
-  // Certificate sub-certificates radio toggle
-  var subCertToggle = document.getElementById('snowflakeSubCertToggle');
-  var subCertsContainer = document.getElementById('snowflakeSubCerts');
-  var subCertClose = document.getElementById('snowflakeSubCertClose');
-  var certParentCard = document.getElementById('snowflakeCertCard');
+  // Dynamic sub-certificates toggle functionality
+  var subCertToggles = document.querySelectorAll('.cert-switch-input');
 
-  function openSubCerts() {
-    if (subCertToggle && subCertsContainer) {
-      subCertToggle.checked = true;
-      subCertToggle.setAttribute('aria-expanded', 'true');
-      subCertsContainer.classList.add('is-visible');
-    }
+  function closeAllSubCerts() {
+    subCertToggles.forEach(function (toggle) {
+      if (toggle.checked) {
+        toggle.checked = false;
+        toggle.setAttribute('aria-expanded', 'false');
+        var targetId = toggle.getAttribute('aria-controls');
+        if (targetId) {
+          var container = document.getElementById(targetId);
+          if (container) {
+            container.classList.remove('is-visible');
+          }
+        }
+      }
+    });
   }
 
-  function closeSubCerts() {
-    if (subCertToggle && subCertsContainer) {
-      subCertToggle.checked = false;
-      subCertToggle.setAttribute('aria-expanded', 'false');
-      subCertsContainer.classList.remove('is-visible');
-    }
-  }
+  subCertToggles.forEach(function (toggle) {
+    var targetId = toggle.getAttribute('aria-controls');
+    var container = targetId ? document.getElementById(targetId) : null;
+    if (!container) return;
 
-  if (subCertToggle && subCertsContainer) {
-    subCertToggle.addEventListener('change', function () {
-      if (subCertToggle.checked) {
-        openSubCerts();
+    toggle.addEventListener('change', function () {
+      if (toggle.checked) {
+        // Optional: close other open groups if desired
+        subCertToggles.forEach(function (other) {
+          if (other !== toggle && other.checked) {
+            other.checked = false;
+            other.setAttribute('aria-expanded', 'false');
+            var otherTarget = other.getAttribute('aria-controls');
+            if (otherTarget) {
+              var otherContainer = document.getElementById(otherTarget);
+              if (otherContainer) otherContainer.classList.remove('is-visible');
+            }
+          }
+        });
+        toggle.setAttribute('aria-expanded', 'true');
+        container.classList.add('is-visible');
       } else {
-        closeSubCerts();
+        toggle.setAttribute('aria-expanded', 'false');
+        container.classList.remove('is-visible');
       }
     });
 
-    if (subCertClose) {
-      subCertClose.addEventListener('click', function (e) {
+    // Close button inside sub-certificate banner
+    var closeBtn = container.querySelector('.sub-cert-close');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function (e) {
         e.stopPropagation();
-        closeSubCerts();
+        toggle.checked = false;
+        toggle.setAttribute('aria-expanded', 'false');
+        container.classList.remove('is-visible');
       });
     }
+  });
 
-    // Reset radio button and minimize when user clicks outside the parent card or sub-certificates container
-    document.addEventListener('click', function (e) {
-      if (!subCertToggle.checked) return;
-      var clickedInsideParent = certParentCard && certParentCard.contains(e.target);
-      var clickedInsideContainer = subCertsContainer.contains(e.target);
-      if (!clickedInsideParent && !clickedInsideContainer) {
-        closeSubCerts();
-      }
-    });
+  // Reset toggles when user clicks outside any certificate card or sub-certificates container
+  document.addEventListener('click', function (e) {
+    var isInsideCard = e.target.closest('.card');
+    var isInsideContainer = e.target.closest('.sub-cert-container');
+    if (!isInsideCard && !isInsideContainer) {
+      closeAllSubCerts();
+    }
+  });
 
-    // Close on Escape key
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && subCertToggle.checked) {
-        closeSubCerts();
-      }
-    });
-  }
+  // Close open groups on Escape key
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      closeAllSubCerts();
+    }
+  });
 })();
