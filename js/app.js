@@ -102,4 +102,60 @@
       videoPlayer.appendChild(iframe);
     });
   }
+
+  // Certificate sub-certificates radio toggle
+  var subCertToggle = document.getElementById('snowflakeSubCertToggle');
+  var subCertsContainer = document.getElementById('snowflakeSubCerts');
+  var subCertClose = document.getElementById('snowflakeSubCertClose');
+  var certParentCard = document.getElementById('snowflakeCertCard');
+
+  function openSubCerts() {
+    if (subCertToggle && subCertsContainer) {
+      subCertToggle.checked = true;
+      subCertToggle.setAttribute('aria-expanded', 'true');
+      subCertsContainer.classList.add('is-visible');
+    }
+  }
+
+  function closeSubCerts() {
+    if (subCertToggle && subCertsContainer) {
+      subCertToggle.checked = false;
+      subCertToggle.setAttribute('aria-expanded', 'false');
+      subCertsContainer.classList.remove('is-visible');
+    }
+  }
+
+  if (subCertToggle && subCertsContainer) {
+    subCertToggle.addEventListener('change', function () {
+      if (subCertToggle.checked) {
+        openSubCerts();
+      } else {
+        closeSubCerts();
+      }
+    });
+
+    if (subCertClose) {
+      subCertClose.addEventListener('click', function (e) {
+        e.stopPropagation();
+        closeSubCerts();
+      });
+    }
+
+    // Reset radio button and minimize when user clicks outside the parent card or sub-certificates container
+    document.addEventListener('click', function (e) {
+      if (!subCertToggle.checked) return;
+      var clickedInsideParent = certParentCard && certParentCard.contains(e.target);
+      var clickedInsideContainer = subCertsContainer.contains(e.target);
+      if (!clickedInsideParent && !clickedInsideContainer) {
+        closeSubCerts();
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && subCertToggle.checked) {
+        closeSubCerts();
+      }
+    });
+  }
 })();
